@@ -1,0 +1,78 @@
+.nlp_code{
+   display: block;
+  
+   overflow-x: hidden;
+   height: 100vh;
+  
+}
+.code_header{
+    width: 100vw;
+    height: 50px;
+    background-color: aliceblue;
+    box-shadow:0 5px 5px grey;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+    font-size: 25px;
+    font-family: "Verdana",sans-serif;
+    font-weight: bold;
+}
+.home_icon{
+    background-color: transparent;
+    border: none;
+    color: rgb(1, 1, 100);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    
+}
+#input_container{
+    width: 50%;
+   
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    padding-left: 0;
+    display: block;
+}
+#input_msg{
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    padding-right: 50px;
+    color: white;
+   left: 50%;
+   transform: translate(-50%);
+    background-color: rgb(1, 1, 74);
+   border: 1px solid rgb(28, 1, 137);
+}
+#code{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    height:50% ;
+}
+
+@media (max-width:1024px){
+    #input_container{
+        width: 70%;
+    }
+   
+    #code{
+        width: 70%;
+    }
+}
+@media (max-width:600px){
+    #input_container{
+        width: 90%;
+    }
+   
+    #code{
+        width: 90%;
+    }
+}

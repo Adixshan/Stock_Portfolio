@@ -13,6 +13,34 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
+
+
+app.post('/exam', (req, res) => {
+    const { toughness, hour, consist, syllabus, time} = req.body;
+    
+  
+  const pythonScriptPath = path.join(__dirname, 'Exam_prediction.py');
+  const ExamProcess = spawn('python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
+    
+  
+  ExamProcess.stdout.on('data',(data)=>{
+  const output= data.toString();
+  console.log('Python output:',output);
+  res.status(200).json({output:output});
+  });
+  ExamProcess.stderr.on('data',(data)=>{
+    const error=data.toString();
+    console.log('Python error:',error);
+  });
+  ExamProcess.on('close',(code)=>{
+    console.log(`python process execute with code ${code}`);
+  });
+  
+  
+  });
+
+
+
 app.post('/ques',(req,res)=>{
 
 const {paragraph,question}=req.body;
