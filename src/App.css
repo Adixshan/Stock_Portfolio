@@ -1,41 +1,90 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
  
-  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* General Styles */
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(2, 14, 51);
+  flex-direction: row;  /* Change to row for horizontal layout */
+  gap: 20px;            /* Space between buttons */
+  align-items: center;  /* Align buttons in the center */
+position: absolute;
+right: 10px;
+color: white;
+background-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+                 /* Text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s ease;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn:hover {
+  color:white;  /* Change text color on hover */
+}
+
+.btn:active {
+  color: white;  /* Change text color on active state */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-header {
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .button-group {
+   
+    justify-content: center; /* Center buttons */
   }
+}
+
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-table th,
+.stock-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.stock-table th {
+  background-color: #004085;
+  color: white;
+}
+
+.stock-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.stock-table td {
+  color: #333;
 }

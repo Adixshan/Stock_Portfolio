@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    padding: 20px;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-photo {
+    width: 70px; /* Slightly larger */
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.welcome-text {
+    font-size: 1.5rem;
+    color: #004085;
+    font-weight: bold;
+}
+
+/* Stats Section */
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+   position: relative;
+   left: 100px;
+   top: 50px;
+}
+
+.stat-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+/* Pie Chart Section */
+.card-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.pie-chart-container .card {
+    max-width: 500px; /* Larger width */
+    max-height: 400px; /* Adjust height */
+    margin: auto;
+    padding: 20px;
+    border: none;
+}
+
+.pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #004085;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 991px) {
+    .user-photo {
+        width: 60px; /* Adjust for smaller screens */
+        height: 60px;
+    }
+    .stat-card{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .pie-chart-container .card {
+        max-width: 100%; /* Ensure chart fits smaller screens */
+    }
+}

@@ -1,0 +1,49 @@
+.table-container {
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for modern look */
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff; /* Default text color to white */
+}
+
+.stock-table th, .stock-table td {
+  border: 1px solid #333; /* Subtle border for separation */
+  padding: 10px 15px;
+  text-align: left;
+  color: #ffffff; /* Ensure text color is white */
+}
+
+.stock-table th {
+  background-color: #333333; /* Darker background for headers */
+  color: #f4b400; /* Yellow color for header text */
+  font-weight: bold;
+}
+
+.stock-table tr:nth-child(even) {
+  background-color: #2a2a2a; /* Alternate row background */
+}
+
+.stock-table tr:nth-child(odd) {
+  background-color: #1e1e1e; /* Alternate row background */
+}
+
+.stock-table tr:hover {
+  background-color: #444444; /* Highlight row on hover */
+}
+
+.stock-table td {
+  color: #ffffff; /* Force white color for data */
+}
+
+.stock-table td:nth-child(4), .stock-table td:nth-child(5) {
+  color: inherit; /* Retain white text for "Buy Price" and "Current Price" */
+}
+
+.stock-table td:nth-child(5) {
+  color: inherit !important; /* Ensure green/red styles are applied dynamically */
+}
