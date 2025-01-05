@@ -33,15 +33,11 @@ Ensure you have the following installed:
 
 ### Step 2: Install Dependencies
 Run the following command to install all required dependencies:
-```bash
-npm install
-```
+
 
 ### Step 3: Start the Application
 Start the React development server:
-```bash
-npm start
-```
+
 This will open the application in your default browser at `http://localhost:3000`.
 
 ---
@@ -78,7 +74,7 @@ This will open the application in your default browser at `http://localhost:3000
   - Add/Update Form
 - Smooth scrolling to respective sections.
 
----
+
 
 ## Backend Integration (Optional)
 ### Step 1: Setup Backend
@@ -89,7 +85,7 @@ Use a backend API (Node.js or Spring Boot) to handle persistent data. Configure 
 
 ### Step 2: Connect Frontend to Backend
 Update the API base URL in a `.env` file:
-```env
+
 REACT_APP_API_BASE_URL=http://localhost:8080
 
 
@@ -110,9 +106,7 @@ The application uses:
 
 ## Troubleshooting
 - If the application does not load, ensure all dependencies are installed by running:
-  ```bash
-  npm install
-  ```
+
 - Check the browser console for errors and ensure the backend (if used) is running.
 
 ---
