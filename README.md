@@ -1,4 +1,4 @@
-# Stock Portfolio Tracker [Visit the Stock Portfolio Tracker](https://magnificent-florentine-8c79e9.netlify.app/)
+# Stock Portfolio Tracker [Website link](https://magnificent-florentine-8c79e9.netlify.app/)
 
 
 ## Overview
